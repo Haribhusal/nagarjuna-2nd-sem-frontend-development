@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      background-color: yellow;
+      padding: 10px;
+    }
+
+    header img {
+      height: 48px;
+      width: 48px;
+      border-radius: 48px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        background-color: red;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://picsum.photos/id/23/100" alt="">
+    <nav>
+      <a href="">Home</a>
+      <a href="">About us</a>
+      <a href="">Services</a>
+      <a href="">Gallery</a>
+      <a href="">Contact</a>
+    </nav>
+
+    <button>Login</button>
+  </header>
+</body>
+
+</html>

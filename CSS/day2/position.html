@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bigbox {
+      height: 500px;
+      width: 500px;
+      background-color: yellow;
+      position: relative;
+    }
+
+    .smallbox {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      top: -100px;
+      left: 400px;
+      position: absolute;
+    }
+
+
+    section {
+      height: 100vh;
+      background-color: yellow;
+      border-bottom: 3px solid red;
+    }
+
+    header {
+      position: sticky;
+      top: 100px;
+      background-color: palegoldenrod;
+      height: 100px;
+      width: 100vw;
+    }
+
+    .boxes {
+      height: 500px;
+      width: 500px;
+      background-color: yellow;
+      position: relative;
+    }
+
+    .boxes div {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      background-color: black;
+      position: absolute;
+    }
+
+    .boxes .box1 {
+      background-color: red;
+      z-index: 2;
+    }
+
+    .boxes .box2 {
+      background-color: orange;
+      left: 20px;
+      top: 20px;
+      z-index: 1
+    }
+
+    .boxes .box3 {
+      background-color: purple;
+      left: 50px;
+      top: 50px;
+      z-index: 100
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+  <div class="bigbox">
+    <div class="smallbox"></div>
+  </div> -->
+
+
+  <!-- <header>
+    This is header
+  </header>
+
+  <section>
+    this is section
+  </section>
+  <section>
+    this is section
+  </section>
+  <section>
+    this is section
+  </section>
+  <section>
+    this is section
+  </section> -->
+
+
+  <div class="boxes">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+
+</body>
+
+</html>
