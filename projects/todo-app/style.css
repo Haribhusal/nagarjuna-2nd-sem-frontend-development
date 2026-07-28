@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#app{
+  max-width: 400px;
+  width: 100%;
+  background-color: papayawhip;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid palevioletred;
+}
+#input-group{
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  background: palevioletred;
+}
+#input-group input{
+  width: 100%;
+  padding: 10px 15px;
+}
+
+button{
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background-color: purple;
+  color: white;
+}
+
+#list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 2px solid purple;
+  padding-left: 10px;
+  background-color: white;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // let result = 10 - 15;
+    // result = 20
+    // console.log(result);
+
+    var result = 30;
+    var result = 40;
+
+    let name = "Nagarjuna";
+    let age = 20
+
+    let isPassed = true;
+    // console.log(typeof isPassed)
+    // console.log(result)
+
+    let student = {
+      name: "Ramesh",
+      age: 20,
+      isPassed: true
+    }
+    // console.log(typeof student) // Object Data Type
+
+    console.log(typeof countryName)
+
+
+    // 1. Initial State: The app is loading. Data is "undefined".
+    let userProfile = undefined;
+    console.log(userProfile?.bio); // undefined (Safe navigation, no crash)
+
+    // 2. Database Response: The data loaded successfully.
+    // The user chose NOT to write a bio, so the database returns null.
+    userProfile = {
+      username: "DevJay",
+      premiumStatus: false,
+      bio: null // Intentional absence of data
+    };
+
+    // 3. Displaying the Profile in the UI
+    function displayBio(profile) {
+      // Use Nullish Coalescing (??) to provide a fallback for null/undefined
+      const bioText = profile.bio ?? "This user hasn't written a bio yet.";
+
+      console.log(`Bio: ${bioText}`);
+    }
+
+    displayBio(userProfile); // Output: "Bio: This user hasn't written a bio yet."
+
+    // 4. Checking if we need to show an "Edit" button
+    if (userProfile.bio === null) {
+      console.log("Prompt user: 'Add a bio to complete your profile!'");
+    }
+
+
+    console.log(typeof null)
+
+  </script>
+</body>
+
+</html>
