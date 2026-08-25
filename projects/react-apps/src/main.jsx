@@ -4,7 +4,9 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import RootLayout from "./layouts/RootLayout";
 import Homepage from './pages/Homepage'
+import NewsDetailsPage from './pages/NewDetailsPage'
 import './index.css'
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,17 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Homepage />
+      },
+      {
+        path: '/news-details/:newsId',
+        loader: async ({ params }) => {
+          return params
+        },
+        element: <NewsDetailsPage />
+      },
+      {
+        path: "register",
+        element: <RegisterPage />
       },
       {
         path: '/about',

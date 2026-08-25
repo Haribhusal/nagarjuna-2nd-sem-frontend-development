@@ -10,12 +10,12 @@ export default function Homepage() {
 
   async function fetchNews() {
     try {
-      fetch(URL)
+      await fetch(URL)
         .then(res => res.json())
         .then(data => setNews(data))
 
     } catch (error) {
-
+      console.log(error)
     }
   }
 
@@ -34,13 +34,13 @@ export default function Homepage() {
         </div>
         <div className="row grid grid-cols-3 gap-5">
           {news.slice(0, showItems).map((item) => (
-            <Link to={'/news-details/123'}>
+            <Link to={`/news-details/${item.id}`}>
               <article>
                 <img src={`https://picsum.photos/id/${item.id}/500/400`} alt="" />
-                <h3 className="hover:text-blue-600 font-bold text-xl my-5">
+                <h3 className="hover:text-blue-600 font-bold text-xl my-5 line-clamp-2">
                   {item.title}
                 </h3>
-                <p>
+                <p className="line-clamp-2">
                   {item.body}
                 </p>
               </article>

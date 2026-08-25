@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Header() {
   return (
-    <header className="border-b border-gray-400 py-3">
+    <header className="border-b border-gray-400 py-3 px-3">
       <div className="container flex mx-auto justify-between items-center">
         <div className="logo">
           <h1 className="text-3xl font-bold">Our APP Name</h1>
